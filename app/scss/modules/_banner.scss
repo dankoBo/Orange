@@ -1,0 +1,84 @@
+.banner {
+    background-color: $color-orange;
+    padding: 161px 0 271px;
+
+    @media screen and (max-width: 375px) {
+        padding: 54px 0 140px;
+    }
+
+    &__container {
+        display: flex;
+        position: relative;
+
+        @media screen and (max-width: 1060px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        
+        @include respond-to(tablet-landscape) {
+            text-align: center;
+        }
+        
+        @include respond-to(tablet-portrait) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        max-width: 533px;
+        padding-bottom: 25px;
+
+        @include respond-to(tablet-portrait) {
+            max-width: 400px;
+            font-size: 45px;
+            line-height: 40px;
+        }
+
+        @media screen and (max-width: 375px) {
+            max-width: 315px;
+            padding-bottom: 16px;
+            font-size: 30px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 563px;
+        font-family: $font-roboto-700;
+        font-size: 16px;
+        line-height: 32px;
+        color: $color-white;
+        padding-bottom: 42px;
+
+        @include respond-to(tablet-portrait) {
+            max-width: 315px;
+            text-align: center;
+            padding-bottom: 29px;
+        }   
+    }
+
+    &__img {
+        max-width: 618px;
+        position: absolute;
+        top: -22px;
+        right: -68px;
+
+        @include respond-to(desktop) {
+            max-width: 500px;
+        }
+
+        @media screen and (max-width: 1060px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 375px) {
+            display: block;
+            position: static;
+            padding: 0 0 50px 43px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.subscribe {
+    text-align: center;
+    padding-bottom: 140px;
+
+    @media screen and (max-width: 375px) {
+        padding-bottom: 113px;
+    }
+
+    &__title {
+        padding-bottom: 16px;
+
+        @media screen and (max-width: 375px) {
+            padding-bottom: 0;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font-roboto-500;
+        font-size: 34px;
+        line-height: 45px;
+        color: $color-silver;
+        padding-right: 21px;
+        padding-bottom: 60px;
+
+        @media screen and (max-width: 375px) {
+            font-size: 26px;
+            padding-right: 0;
+            padding-bottom: 46px;
+        }
+    }
+}

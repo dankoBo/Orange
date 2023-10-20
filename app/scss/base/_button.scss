@@ -1,0 +1,18 @@
+.button {
+    padding: 18px 17px 17px 18px;
+    background-color: $color-water-leaf;
+    border-radius: 20px;
+    border: none;
+    font-family: $font-roboto-700;
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-white;
+
+    &:hover {
+        background-color: $color-waikawa;
+    }
+
+    &_product {
+        padding: 18px 22px;
+    }
+}

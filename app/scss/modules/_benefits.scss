@@ -1,0 +1,89 @@
+.benefits {
+    position: relative;
+
+    @media screen and (max-width: 375px) {
+        max-width: 335px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.15);
+        background-color: $color-white;
+        margin-top: -127px;
+
+        @media screen and (max-width: 375px) {
+            margin-top: -66px;
+        }
+
+        @include respond-to(desktop) {
+            justify-content: center;
+        }
+    }
+
+    &__column {
+        padding: 0 50px;
+
+        @media screen and (max-width: 375px) {
+            padding: 0 15px 0 20px;
+        }
+    }
+
+    &__card-discound {
+        max-width: 300px;
+        padding: 70px 0 60px;
+
+        @media screen and (max-width: 375px) {
+            padding: 60px 0 0px;
+        }
+    }
+
+   &__img-discound {
+        width: 208px;
+        margin: 0 auto;
+    }
+
+   &__card-health {
+        max-width: 300px;
+        padding: 60px 0 0;
+    }
+
+    &__img-health {
+        width: 183px;
+        margin-left: 27px;
+    }
+
+    &__card-support {
+        max-width: 300px;
+        padding: 60px 0 60px;
+    }
+
+    &__img-support {
+        width: 189px;
+        margin-left: 55px;
+        height: 133px;
+    }
+
+   &__title {
+        font-family: $font-roboto-500;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-gulf-blue;
+        padding: 38px 0 17px;
+    }
+
+   &__line {
+        width: 60px;
+        height: 5px;
+        background-color: $color-orange;
+        margin-bottom: 37px;
+    }
+
+   &__text {
+        font-family: $font-roboto-500;
+        font-size: 16px;
+        line-height: 32px;
+        color: $color-waikawa; 
+    }  
+}

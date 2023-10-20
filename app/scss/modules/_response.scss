@@ -1,0 +1,167 @@
+.response {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 127px;
+    position: relative;
+    margin-bottom: 160px;
+
+    @media screen and (max-width: 375px) {
+        padding-top: 210px;
+        margin-bottom: 100px;
+    }
+    
+    &__left {
+        width: 618px;
+        padding-top: 30px;
+    }
+
+    &__quotes {
+        max-width: 378px;
+        position: relative;
+        margin: 0 auto;
+
+        @include respond-to(desktop) {
+            max-width: 250px;
+            position: absolute;
+            top: 50px;
+        }
+
+        @include respond-to(tablet-landscape) {
+            left: 120px;
+        }
+
+        @media screen and (max-width: 375px) {
+            max-width: 148px;
+            position: absolute;
+            top: 103px;
+            left: 29px;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 40px;
+        left: 25px;
+
+        @include respond-to(desktop) {
+            top: 10px;
+        }
+        
+        @media screen and (max-width: 375px) {
+            top: 22px;
+            left: 10px;
+        }
+    }
+
+    &__right {
+        max-width: 810px;
+        height: 950px;
+        border-radius: 20px 0px 0px 20px;
+        background-color: $color-orange;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 375px) {
+            height: 660px;
+        }
+    }
+
+    &__card {
+        max-width: 900px;
+        display: flex;
+        position: relative;
+        right: 210px;
+
+        @media screen and (max-width: 1060px) {
+            right: 30px;
+        }
+
+        @include respond-to(tablet-portrait) {
+            right: -10px;
+        }
+
+        @media screen and (max-width: 375px) {
+            max-width: 300px;
+            right: 54px;
+        }
+
+        &-item {
+            width: 420px;
+            background-color: $color-white;
+            box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            padding: 80px 0 63px 50px;
+
+            &:hover {
+                background-color: $color-water-leaf;
+                color: $color-white;
+            }
+            
+            @media screen and (max-width: 1060px) {
+                max-width: 350px;
+            }
+
+            @media screen and (max-width: 375px) {
+                max-width: 300px;
+            }
+
+            &_none {
+
+                @include respond-to(tablet-landscape) {
+                    display: none;
+                }
+
+                @media screen and (max-width: 375px) {
+                    display: none;
+                }
+            }
+        }
+
+        &-quotes {
+            max-width: 49px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+
+        &-figure {
+            width: 0px;
+            height: 0px;
+            border-left: 20px solid $color-orange;
+            border-bottom: 20px solid transparent;
+            border-top: 20px solid $color-orange;
+        }
+
+        &-row {
+            padding-right: 60px;
+
+            @media screen and (max-width: 1060px) {
+                padding-right: 20px;
+            }
+
+            @media screen and (max-width: 375px) {
+                padding-right: 10px;
+            }
+        }
+
+        &-text {
+            font-family: $font-roboto-500;
+            font-size: 18px;
+            line-height: 36px;
+            padding-bottom: 190px;
+            max-width: 310px;
+
+            @media screen and (max-width: 375px) {
+                padding-bottom: 85px;
+            }
+        }
+
+        &-author {
+            font-family: $font-roboto-500;
+            font-size: 18px;
+            line-height: 36px;
+        }
+    }  
+}
